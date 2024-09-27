@@ -25,6 +25,8 @@ Testing the C Program for the desired output.
 DEVELOPED BY:VEDAGIRI INDU SREE
 REG.NO:212223230236
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
+
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h> 
@@ -80,11 +82,12 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
-
+```
 ## OUTPUT
 ![image](https://github.com/user-attachments/assets/cec4d42b-dfd5-4845-8421-846d7b11f794)
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
+```
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -95,6 +98,7 @@ int res = mkfifo("/tmp/my_fifo", 0777);
 if (res == 0) printf("FIFO created\n");
 exit(EXIT_SUCCESS);
 }
+```
 
 ## OUTPUT
 ![image](https://github.com/user-attachments/assets/7c3b2b75-63b3-4339-ba1e-8060733be242)
