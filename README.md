@@ -1,7 +1,6 @@
 # Linux-IPC--Pipes
 Linux-IPC-Pipes
 
-
 # Ex03-Linux IPC - Pipes
 
 # AIM:
